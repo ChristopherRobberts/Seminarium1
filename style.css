@@ -17,36 +17,56 @@ body {
   margin-bottom: 2%;
 }
 
-@media only screen and (max-width: 768px){
-  .header{
+@media only screen and (max-width: 768px) {
+  .header {
     font-size: 30px;
   }
 }
 
 div.links {
-  display: flex;
-  justify-content: center;
   text-align: center;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 968px) {
+  div.links {
+    margin: 0;
+  }
 }
 
 .links>ul>li {
   float: left;
 }
 
+.links>*>#rightlink {
+  float: right;
+}
+
+@media only screen and (max-width: 321px){
+  .links>*>#rightlink>a {
+    font-size: 50%;
+    width: 30px;
+  }
+}
+
 .links>ul>li>a {
-  margin:2%;
   border: 1px solid #555;
   display: block;
   width: 200px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 150, 255, 0.3);
   text-decoration: none;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .links>ul>li>a {
-    width: 100px;
+    width: 80px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .links>ul>li>a {
+    width: 400px;
   }
 }
 
@@ -56,30 +76,29 @@ div.links {
   font-style: italic;
 }
 
-div.calendarpos>ul>li>a {
-  border: 1px solid #555;
-  display: block;
-  width: 200px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-  text-align: center;
-}
-
 div.image {
   background-color: rgba(255, 150, 20, 0.04);
 }
 
-@media only screen and (max-width: 768px){
+div.image>img {
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 968px) {
   div.image>img {
     width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  div.image>img {
+    width: 70%;
   }
 }
 
 div.contain {
   position: relative;
   margin-top: 2%;
-  max-width: 80%;
   background-color: rgba(255, 150, 20, 0.3);
 }
 
@@ -100,15 +119,17 @@ div.col2 {
 }
 
 .col1>*>ul {
-  font-size: 20px;
+  font-size: 15px;
   color: white;
 }
 
-.col1>*>ul>p {
+.col1>*>h1 {
+  color: white;
   font-size: 25px;
   font-style: italic;
   text-decoration: underline;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
+  margin-top: 3%;
 }
 
 .col2>*>p {
@@ -121,7 +142,28 @@ div.col2 {
   font-size: 25px;
   font-style: italic;
   text-decoration: underline;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
+  margin-top: 3%;
+}
+
+.col1>.hometext {
+  font-size: 15px;
+  color: white;
+}
+
+div.commentbox {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+textarea {
+  margin-left: 5%;
+  resize: none;
+}
+
+div.commentbox>p {
+  color: black;
+  border: 1px dotted black;
+  margin-bottom: 4%;
 }
 
 @media only screen and (max-width: 768px) {

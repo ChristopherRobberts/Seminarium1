@@ -39,7 +39,7 @@
 .days>li {
   display: inline-block;
   width: 13.5%;
-  height: 150px;
+  height: 100px;
   border: 1px solid;
   margin-bottom: 1%;
 }
@@ -51,8 +51,8 @@
 }
 
 .days>li>*>img {
-  width: 89%;
-  height: 90%;
+  width: 60%;
+  height: 80%;
   float: right;
 }
 
